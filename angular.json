@@ -100,8 +100,26 @@
             ],
             "scripts": []
           }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "invoicing-web-app:serve:production"
+            },
+            "development": {
+              "devServerTarget": "invoicing-web-app:serve:development"
+            }
+          },
+          "defaultConfiguration": "development"
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "8d7c5bf6-be63-431c-bae1-02f6821233d6"
   }
 }
