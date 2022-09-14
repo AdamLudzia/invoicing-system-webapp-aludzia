@@ -80,8 +80,8 @@
                name="vatRate"></tr>
     <tr><input [(ngModel)]="newInvoice.entries.carExpenses.registrationPlate" type="text" class="form-control"
                name="registrationPlate"></tr>
-    <tr><input [(ngModel)]="newInvoice.entries.carExpenses.personalUsage" type="text" class="form-control"
-               name="personalUsage"></tr>
+    <tr><input [(ngModel)]="newInvoice.entries.carExpenses.personalUsage" class="form-control" name="personalUsage"
+               type="text"></tr>
   </td>
   <td><input (click)="addInvoice()" type="button" class="primary" value="Add invoice"></td>
 
